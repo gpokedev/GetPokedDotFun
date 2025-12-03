@@ -1,0 +1,120 @@
+# 🎮 Pokémon
+
+A fully playable 2D Pokémon-style browser game built with **HTML5 Canvas**, **JavaScript**, **GSAP**, and **Tiled**. Explore a tile-based world, interact with NPCs, and engage in animated turn-based battles — all in a nostalgic retro aesthetic.
+
+## 🌐 Live Demo
+
+[![Game Screenshot](/img/screenshot.png)](https://manajbin.github.io/pokemon/)
+[![Live Demo](https://img.shields.io/badge/Play-Demo-green)](https://manajbin.github.io/pokemon/)
+---
+
+## ✨ Game Features
+
+### 🌍 Overworld Exploration
+- Smooth player movement with directional sprites
+- Collision detection with map boundaries and objects
+- Foreground layering for immersive depth
+- Interactive NPCs with dialogue sequences
+
+### ⚔️ Battle System
+- Randomized battle zone triggers
+- Turn-based combat with animated attacks
+- Health bar UI for both player and enemy
+- Attack selection with type indicators
+- Victory and fainting transitions with sound and animation
+
+### 🔊 Audio Integration
+- Background music for map and battle scenes
+- Sound effects for attacks, hits, and victory
+- Audio transitions based on game state
+
+### 🧠 Game Architecture
+- Modular class system (`Sprite`, `Monster`, `Character`, `Boundary`)
+- Frame-controlled sprite animation
+- Scene transitions using GSAP
+- Dialogue and interaction logic
+- Reusable utility functions for collision detection
+
+---
+
+## 🧰 Technologies Used
+
+- **HTML5 Canvas** — for rendering the game world and sprites
+- **Vanilla JavaScript** — for game logic and interactivity
+- **GSAP** — for smooth animations and transitions
+- **Howler.js** — for audio playback
+- **Tiled** — for map design and layout
+
+---
+
+## 📁 Project Structure
+
+```
+pokemon/
+├── index.html          # Landing page
+├── game.html           # Main game
+├── chart.html          # Live chart page
+├── index.js            # Game logic
+├── battleScene.js      # Battle system
+├── classes.js          # Game classes
+├── js/
+│   └── utils.js
+├── data/
+│   ├── audio.js
+│   ├── attacks.js
+│   ├── battleZones.js
+│   ├── collisions.js
+│   ├── monsters.js
+│   └── characters.js
+├── img/
+│   ├── Pellet Town.png
+│   ├── foregroundObjects.png
+│   ├── playerDown.png
+│   ├── playerUp.png
+│   ├── playerLeft.png
+│   ├── playerRight.png
+│   ├── battleBackground.png
+│   ├── fireball.png
+│   ├── pumpfuntransparent.png
+│   ├── villager/
+│   └── oldMan/
+└── audio/
+```
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ManaJBin/pokemon.git
+   cd pokemon
+   ```
+
+2. Start a local server:
+   ```bash
+   python -m http.server 8000
+   ```
+
+3. Open `http://localhost:8000` in your browser.
+
+4. Click "START GAME" from the landing page to begin playing!
+
+---
+
+## 📝 Future Improvements
+
+- 🔧 Refactor collision logic into reusable helpers (already started in `utils.js`)
+- 🎵 Add more sound effects and ambient music
+- 🧠 Expand battle mechanics with more attacks and status effects
+- 🗺️ Add additional maps and NPCs
+- 💬 Improve dialogue system with branching conversations
+
+---
+
+## 📸 Credits
+
+- Map designed in **Tiled** and exported as PNG
+- Sprites inspired by classic **Pokémon** assets
+- Audio powered by **Howler.js**
+- Animation powered by **GSAP**
